@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { makeStyles } from "@mui/styles";
 import { AppBar, Collapse, IconButton, Toolbar } from "@mui/material";
 import SortIcon from "@mui/icons-material/Sort";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
+import { Link as Scroll } from 'react-scroll';
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -16,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     background: 'none',
   },
   appbarTitle: {
-    color: '#fff',
+    color: 'rgb(85,120,45)',
     flexGrow: '1',
   },
   appbarWrapper: {
@@ -24,17 +25,17 @@ const useStyles = makeStyles((theme) => ({
     margin: '0 auto',
   },
   icon: {
-    color: '#fff',
+    color: 'rgb(85,120,45)',
   },
   welcomecontainer: {
     textAlign: 'center',
   },
   welcometitle: {
-    color: '#fff',
+    color: 'rgb(85,120,45)',
     fontSize: '4.5rem',
   },
   godown: {
-    color: '#fff',
+    color: 'rgb(85,120,45)',
   },
 }));
 
@@ -45,12 +46,12 @@ export default function Header() {
    setChecked(true);
   },[])
   return(
-    <div className={classes.root}>
+    <div className={classes.root} id="header">
       <AppBar className={classes.appbar} color="transparent" elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>MyQoqopela</h1>
           <IconButton>
-            <SortIcon className={classes.icon} />
+            <SortIcon className={classes.icon} style={{ fontSize: 40 }}/>
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -60,9 +61,11 @@ export default function Header() {
           <h1 className={classes.welcometitle}>
             Welcome to <br />MyQoqopela
           </h1>
-          <IconButton>
-            <ExpandMoreIcon className={classes.godown} />
-          </IconButton>
+          <Scroll to="sections" smooth={true}>
+            <IconButton>
+              <ExpandMoreRoundedIcon className={classes.godown} style={{ fontSize: 90 }}/>
+            </IconButton>
+          </Scroll>
         </div>
       </Collapse>
     </div>

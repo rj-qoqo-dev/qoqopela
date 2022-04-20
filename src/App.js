@@ -7,7 +7,7 @@ import Sections from "./components/Sections";
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '100vh',
-    backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/together.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/handstogether.jpg"})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   },

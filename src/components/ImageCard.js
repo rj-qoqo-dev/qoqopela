@@ -4,14 +4,15 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { Collapse } from '@mui/material';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 465,
+    maxWidth: 265,
     margin: '30px',
   },
   media: {
-    height: 240,
+    height: 140,
   },
   title: {
     fontFamily: 'Nunito',
@@ -25,15 +26,15 @@ const useStyles = makeStyles((theme) => ({
     color: '#ddd',
   }
 }))
-export default function ImageCard({ section }) {
+export default function ImageCard({ section, checked }) {
   const classes = useStyles();
   return (
+    <Collapse in={checked} {...(true ?  { timeout: 1000 } : {})}>
     <Card className={classes.root} style={{backgroundColor: "rgba(0, 0, 0, 0.5)"}}>
       <CardMedia
         component="img"
         className={classes.media}
         image={section.imageUrl}
-        alt="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div" className={classes.title}>
@@ -44,5 +45,6 @@ export default function ImageCard({ section }) {
         </Typography>
       </CardContent>
     </Card>
+    </Collapse>
   );
 }
