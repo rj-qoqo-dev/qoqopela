@@ -21,10 +21,18 @@ export default function Sections() {
       <ButtonBase onClick={() => {console.log("clicked")}}>
         <ImageCard section={sections[0]} checked={checked}/>
       </ButtonBase>
-       <ImageCard section={sections[1]} checked={checked}/>
-       <ImageCard section={sections[2]} checked={checked}/>
-       <ImageCard section={sections[3]} checked={checked}/>
-       <ImageCard section={sections[4]} checked={checked}/>
+      <ButtonBase onClick={() => {console.log("clicked")}}>
+      <ImageCard section={sections[1]} checked={checked}/>
+      </ButtonBase>
+      <ButtonBase onClick={() => {console.log("clicked")}}>
+      <ImageCard section={sections[2]} checked={checked}/>
+      </ButtonBase>
+      <ButtonBase onClick={() => {console.log("clicked")}}>
+      <ImageCard section={sections[3]} checked={checked}/>
+      </ButtonBase>
+      <ButtonBase onClick={() => {console.log("clicked")}}>
+      <ImageCard section={sections[4]} checked={checked}/>
+      </ButtonBase>
     </div>
   )
 }
