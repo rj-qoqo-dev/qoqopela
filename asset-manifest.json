@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/qoqopela/static/css/main.e6c13ad2.css",
-    "main.js": "/qoqopela/static/js/main.3ffca050.js",
+    "main.js": "/qoqopela/static/js/main.463f8b88.js",
     "static/js/787.9f962ef7.chunk.js": "/qoqopela/static/js/787.9f962ef7.chunk.js",
     "index.html": "/qoqopela/index.html",
     "main.e6c13ad2.css.map": "/qoqopela/static/css/main.e6c13ad2.css.map",
-    "main.3ffca050.js.map": "/qoqopela/static/js/main.3ffca050.js.map",
+    "main.463f8b88.js.map": "/qoqopela/static/js/main.463f8b88.js.map",
     "787.9f962ef7.chunk.js.map": "/qoqopela/static/js/787.9f962ef7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.3ffca050.js"
+    "static/js/main.463f8b88.js"
   ]
 }
