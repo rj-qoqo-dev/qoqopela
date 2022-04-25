@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Nunito',
     fontSize: '1.5rem',
     color: '#ddd',
-  }
+  },
 }))
 export default function ImageCard({ section, checked }) {
   const classes = useStyles();

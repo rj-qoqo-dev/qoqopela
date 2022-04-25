@@ -1,9 +1,8 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import { CssBaseline } from "@mui/material";
-import Header from "./components/Header";
-import Sections from "./components/Sections";
-// import Home from "./pages/Home";
+import Header from "../components/Header";
+import Sections from "../components/Sections";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,13 +12,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
   },
 }));
-export default function App() {
+export default function Home() {
   const classes = useStyles();
   return <div className={classes.root}>
     <CssBaseline />
     <Header />
     <Sections />
-    {/* <Home /> */}
   </div>
 }
-
